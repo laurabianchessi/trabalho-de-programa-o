@@ -31,3 +31,7 @@ h2 {
     color:Escolha uma cor;
     margin-top: Defina um tamnho; /* Espaço superior */
 }}
+body {
+    background-image: url(azul.jpg);
+    background-size: cover;
+  }
