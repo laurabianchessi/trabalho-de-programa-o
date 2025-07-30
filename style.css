@@ -1,37 +1,41 @@
-/* Estilo para o body */
-body {
-    display: flex;
-    flex-direction: column; /* Organiza os elementos verticalmente */
-    justify-content: center; /* Centraliza no eixo vertical */
-    align-items: center; /* Centraliza no eixo horizontal */
-    height: 100vh; /* Faz o body ocupar 100% da altura da tela */
-    margin: 0; /* Remove a margem padrão */
-    text-align: center; /* Centraliza os textos */
+:root{
+    --cor-fundo: #01080E;
+    --cor-principal: #0B0D20;
+    --cor-secundaria: #212333;
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
+    }
+    body {
 
+        background-color: var(--cor-fundo);
+        color: var(--cor-texto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        
+        }
+        .caixa-principal {
+            background-color: var(--cor-principal);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            padding: 20px;
+            }
+            h1 {
+                color: var(--cor-destaque);
+                }
+                button {
+                    background-color: var(--cor-secundaria);
+                    color: var(--cor-texto);
+                    border: none;
+                    border-radius: 15px;
+                    padding: 15px;
+                    transition: background-color 0.3s;
+                    }
 
-/* Estilo para a div que contém a imagem */
-.imagem-container {
-    text-align: center; /* Garante que a imagem fique centralizada */
-}
+                    button:hover{
+                        background-color: var(--cor-destaque);
+                        color: var(--cor-principal);
 
-/* Estilo para as imagens */
-img {
-    max-width: 1%; /* A imagem nunca ultrapassará a largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Estilo para o título h1 */
-h1 {
-    color:Escolha uma cor;
-    margin-top: Defina o tamanho da fonte; /* Espaço superior */
-}
-
-/* Estilo para o subtítulo h2 */
-h2 {
-    color:Escolha uma cor;
-    margin-top: Defina um tamnho; /* Espaço superior */
-}}
-body {
-    background-image: url(azul.jpg);
-    background-size: cover;
-  }
+                }
